@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarBucks | Clone</title>
+    <link
+      rel="shortcut icon"
+      href="imgs/StarbucksLogo_2011.svg.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0164845db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- Mobile.sidebar -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#"
+            >Menu <span class="arrow"><i class="fas fa-arrow-right"></i></span
+          ></a>
+          <a href="#">Rewords</a>
+          <a href="#">Gift Cards</a>
+          <hr class="menu-hr" />
+          <div class="menu-btn_mb">
+            <div class="sign-in-mb">Sing in</div>
+            <div class="join-now-mb">Join Now</div>
+          </div>
+          <div class="find-store-mb">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Find Store</span>
+          </div>
+        </div>
+
+        <!-- //Mobile.sidebar -->
+        <div class="left-nav">
+          <div class="logo">
+            <img src="imgs/StarbucksLogo_2011.svg.png" />
+          </div>
+          <nav>
+            <ul>
+              <li>Menu</li>
+              <li>Rewords</li>
+              <li>Gift Cards</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right-nav">
+          <div class="find-store">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Find Store</span>
+          </div>
+          <div class="sign-in">Sing in</div>
+          <div class="join-now">Join Now</div>
+        </div>
+        <span
+          class="open"
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          ><i class="fas fa-bars"></i
+        ></span>
+      </div>
+    </header>
+    <!-- Main Section -->
+
+    <main>
+      <div class="main-container">
+        <div class="annoucements p-3">
+          <span class="text-justify"
+            >Following CDC guidance, facial coverings are recommended in our
+            stores for all customers, and are required where mandated by local
+            law. <a href="#">Learn more</a>
+          </span>
+        </div>
+        <!-- welcome Bg section -->
+        <div class="row welcome-section main-container py-5 mr-0 ml-0">
+          <div class="col-lg-6">
+            <img src="imgs/Welcome coffee.png" />
+          </div>
+          <div class="col-lg-6 text-center right-col">
+            <div class="discription">
+              <h1>WELCOME BACK, PUMPKIN</h1>
+              <p class="mb-5">
+                The quintessential flavor is back in session with the velvety,
+                cool Pumpkin Cream Cold Brew and the warm and cozy Pumpkin Spice
+                Latte.
+              </p>
+              <a href="#" class="discover-btn">Discover fall flavors</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Order section -->
+
+    <div class="row pb-5 welcome-section main-container">
+      <div class="col-lg-6 m-0 p-0">
+        <img class="cake-img" src="imgs/cake.jpg" />
+      </div>
+      <div class="col-lg-6 m-0 p-0 text-center right-col">
+        <div class="discription px-4">
+          <h1 class="mt-lg-5 pt-5">PERFECTLY SPICED OH, SO NICE</h1>
+          <p class="mb-5">
+            Celebrate the return of pumpkin with these bakery favorites—warm
+            autumn spices and just the right amount of sweetness.
+          </p>
+          <a href="#" class="discover-btn">Order now</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-3">
+      <div class="row main-container align-items-center">
+        <div class="col-lg-6 text-center free-coffee">
+          <h1 class="text-bold">Free Coffee is a tap away</h1>
+
+          <p class="text-center">Join now to start earning Rewords</p>
+          <a href="#" class="discover-btn">Order now</a>
+        </div>
+        <div class="col-lg-6 m-0 p-0 mt-5">
+          <img class="star" src="imgs/star.jpg" />
+        </div>
+      </div>
+    </section>
+    <!-- Delivery Section -->
+    <section id="delivery" class="pb-5">
+      <div class="row main-container text-center">
+        <div class="col-lg-6 pb-5">
+          <img class="delivery-img" src="imgs/delivery.jpg" />
+
+          <h3 class="py-4">Today deserves delivery</h3>
+          <p class="">
+            Order Starbucks® delivery on Uber Eats.<br />
+            Check the Uber Eats app for availability and restrictions.**
+          </p>
+          <a href="#" class="discover-btn">Order now</a>
+        </div>
+        <div class="col-lg-6">
+          <img class="rutine-img" src="imgs/rutinePH.jpg" />
+
+          <h3 class="py-4">Fall into an easier routine</h3>
+          <p class="mb-4">
+            Get your favorites, your way—order, pay and pick up with the app.
+          </p>
+          <a href="#" class="discover-btn">See pickup option</a>
+        </div>
+      </div>
+    </section>
+    <!-- Community -->
+
+    <section id="community" class="py-5">
+      <div class="row py-5 align-items-center">
+        <div class="col-lg-6 text pb-4">
+          <div class="text-box3">
+            <h3 class="my-4 text-center">50 years of serving communities</h3>
+            <p class="text-center mb-5">
+              From the beginning, Starbucks has been about more than just
+              coffee. <br />See how our partners (employees) and customers
+              strengthen<br />
+              our local communities.
+            </p>
+            <a href="#" class="discover-btn">Learn more</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="community-img" src="imgs/137-72972 (1).jpg" />
+        </div>
+      </div>
+    </section>
+    <section id="conditions">
+      <div
+        class="row py-5 align-items-center justify-content-center text-center"
+      >
+        <div class="conditions w-50">
+          <p class="text-center mb-5">
+            *Terms, taxes and other fees may apply. Fees subject to change. Menu
+            limited. Restricted delivery area. Available in participating
+            locations only. Prices for Starbucks® items purchased through Uber
+            Eats may be higher than posted in stores or as marked. See the Uber
+            Eats app for details. Limited time offer. May not be combined with
+            other offers, discounts or promotions.
+          </p>
+          <sm class="">
+            **According to the USDA, 1.2 pounds of food is the equivalent to 1
+            meal. Nearly 34 million meals donated to Feeding America and other
+            hunger relief organizations.
+          </sm>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-links">
+      <div class="main-container row py-5">
+        <div class="col">
+          <h3>About Us</h3>
+          <ul class="">
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Our Coffee</a></li>
+            <li><a href="#">Stories and News</a></li>
+            <li><a href="#">Starbucks Archive</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Careers</h3>
+          <ul class="">
+            <li><a href="#">Culture & Values</a></li>
+            <li><a href="#">Inclusion, Dicersity, and Equity</a></li>
+            <li><a href="#">College Achievement Plan</a></li>
+            <li><a href="#">U.S Careers</a></li>
+            <li><a href="#">International Careers</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Social Impact</h3>
+          <ul class="">
+            <li><a href="#">People</a></li>
+            <li><a href="#">Plant</a></li>
+            <li><a href="#">Environmental and Social Impact Reporting</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>For Business Partners</h3>
+          <ul class="">
+            <li><a href="#">Landlord Support Center</a></li>
+            <li><a href="#">Supplies</a></li>
+            <li><a href="#">Corporate Gift Card Sales</a></li>
+            <li><a href="#">Office of Food Service Coffee</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Other and Pickup</h3>
+          <ul class="">
+            <li><a href="#">Order on the App</a></li>
+            <li><a href="#">Order on the Web</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Order and Pickup Options</a></li>
+            <li><a href="#">Explore and Find Coffee for Home</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr class="hr" />
+    <section id="footer" class="main-container">
+      <div class="footer-row">
+        <div class="social-iocns mb-5">
+          <a href="#"><i class="fab fa-facebook"></i> </a>
+          <a href="#"><i class="fab fa-spotify"></i> </a>
+          <a href="#"><i class="fab fa-instagram"></i> </a>
+          <a href="#"><i class="fab fa-youtube"></i> </a>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy </a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#"> CA Supply Chine Act</a></li>
+          <li><a href="#"> Submit your Idea</a></li>
+        </ul>
+        <sm class="text-muted end-text py-3 end-title">
+          © 2021 Starbucks Coffee Company. All rights reserved.</sm
+        >
+      </div>
+    </section>
+    <script>
+      function openNav() {
+        document.getElementById('mySidenav').style.width = '250px';
+      }
+
+      function closeNav() {
+        document.getElementById('mySidenav').style.width = '0';
+      }
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
